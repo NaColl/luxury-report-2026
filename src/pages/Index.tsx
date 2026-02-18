@@ -8,13 +8,6 @@ import ThematicSection from "@/components/ThematicSection";
 import FutureSection from "@/components/FutureSection";
 import Footer from "@/components/Footer";
 import SectionDivider from "@/components/SectionDivider";
-import hermesImg from "@/assets/hermes-editorial.jpg";
-import lvmhImg from "@/assets/lvmh-editorial.jpg";
-import pradaImg from "@/assets/prada-editorial.jpg";
-import richemontImg from "@/assets/richemont-editorial.jpg";
-import chanelImg from "@/assets/chanel-editorial.jpg";
-import keringImg from "@/assets/kering-editorial.jpg";
-import monclerImg from "@/assets/moncler-editorial.jpg";
 
 const Index = () => {
   return (
@@ -34,7 +27,6 @@ const Index = () => {
         number="03"
         name="Hermès"
         subtitle="Real Physical Luxury"
-        image={hermesImg}
         heroStat={{ value: "41%", label: "Recurring operating margin — higher than many software firms" }}
         intro="Hermès is the clear outlier in a stagnant luxury market. In 2025, revenue crossed €16 billion with the market valuing the house at a PE of around 49 versus roughly 20–25 for LVMH."
         body={[
@@ -64,7 +56,6 @@ const Index = () => {
         number="04"
         name="LVMH"
         subtitle="Experiential Private Equity Playbook"
-        image={lvmhImg}
         alt
         heroStat={{ value: "~50%", label: "Share of large-cap luxury group universe by revenue" }}
         intro="LVMH is essentially a private equity company in luxury company's clothing. Unlike Hermès, which emphasizes strict organic growth, LVMH actively prunes and expands its portfolio to optimize returns."
@@ -94,7 +85,6 @@ const Index = () => {
         number="05"
         name="Prada"
         subtitle="The Miu Miu Success Story"
-        image={pradaImg}
         heroStat={{ value: "€5.4B", label: "Revenue — up 17% with four straight years of double-digit growth" }}
         intro="Prada Group enters 2026 in an unusually strong position: €5.4bn revenue (+17%), €1.28bn EBIT (+21%), 23.6% EBIT margin, and net cash rising to ~€600m."
         body={[
@@ -118,7 +108,6 @@ const Index = () => {
         number="06"
         name="Richemont"
         subtitle="The Hard-Luxury Benchmark"
-        image={richemontImg}
         alt
         heroStat={{ value: "€6.5B", label: "Net cash position — a fortress balance sheet" }}
         intro="Richemont enters 2026 as the hard-luxury benchmark: jewellery and watches carrying the group through a messy macro, even as cost inflation and China softness quietly bite."
@@ -147,7 +136,6 @@ const Index = () => {
         number="07"
         name="Chanel"
         subtitle="Surprisingly Innovative"
-        image={chanelImg}
         heroStat={{ value: "~38,400", label: "Headcount — rose even as peers froze hiring" }}
         intro="Chanel is navigating a cyclical slowdown from a position of strength. Privately held, debt-free, and insulated from quarterly market pressure. 2024 became a year of record investment."
         body={[
@@ -170,7 +158,6 @@ const Index = () => {
         number="08"
         name="Kering"
         subtitle="A Prime Example of What Can Go Wrong"
-        image={keringImg}
         alt
         heroStat={{ value: "-94%", label: "Net income decline — group revenue fell 13%" }}
         intro="Kering is a prime example of what can go wrong in modern luxury. Brand desirability has eroded across the portfolio: Gucci is the biggest loser, Alexander McQueen suffering 'sharp decline in footfall,' Balenciaga no longer generating previous interest."
@@ -198,7 +185,6 @@ const Index = () => {
         number="09"
         name="Moncler"
         subtitle="Back to the Mountain"
-        image={monclerImg}
         heroStat={{ value: "78.1%", label: "Gross margins — with nearly 90% DTC sales" }}
         intro="Moncler Group sits in the middle tier of luxury performers. It has avoided sharp declines, but is not matching the momentum of Hermès or Richemont."
         body={[

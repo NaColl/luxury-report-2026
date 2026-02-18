@@ -13,10 +13,11 @@ interface HouseSectionProps {
   dangers?: string[];
   alt?: boolean;
   children?: ReactNode;
+  image?: string;
 }
 
 const HouseSection = ({
-  id, number, name, subtitle, heroStat, intro, body, keyPoints, dangers, alt = false, children,
+  id, number, name, subtitle, heroStat, intro, body, keyPoints, dangers, alt = false, children, image,
 }: HouseSectionProps) => {
   return (
     <section className={`py-32 px-6 ${alt ? "bg-section-alt" : ""}`} id={id}>
@@ -35,6 +36,19 @@ const HouseSection = ({
             {subtitle}
           </p>
         </ScrollReveal>
+
+        {image && (
+          <ScrollReveal delay={0.12}>
+            <div className="my-12 overflow-hidden">
+              <img
+                src={image}
+                alt={`${name} editorial`}
+                className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                loading="lazy"
+              />
+            </div>
+          </ScrollReveal>
+        )}
 
         {heroStat && (
           <ScrollReveal delay={0.15}>
